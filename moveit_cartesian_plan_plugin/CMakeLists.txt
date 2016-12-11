@@ -24,6 +24,7 @@ include(${QT_USE_FILE})
 ## I prefer the Qt signals and slots to avoid defining "emit", "slots",
 ## etc because they can conflict with boost signals, so define QT_NO_KEYWORDS here.
 add_definitions(-DQT_NO_KEYWORDS)
+add_definitions(-std=c++11)
 
 set(moveit_cartesian_plan_plugin_SRCS
   src/add_way_point.cpp
